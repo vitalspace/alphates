@@ -19,7 +19,7 @@ let hours = date_ob.getHours();
 let minutes = date_ob.getMinutes();
 // current seconds
 let seconds = date_ob.getSeconds();
-const dir = path.join(__dirname, "/data");
+const dir = path.join(__dirname, "./data");
 // ========== [ Program ] ========== //
 const lauchpuppeteer = async launchOptions => {
     const browser = await puppeteer.launch({
