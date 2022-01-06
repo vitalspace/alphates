@@ -2,7 +2,7 @@
 'use strict'
 // ========== [ Dependencies ] ========== //
 const puppeteer = require('puppeteer-core');
-const path = path('path');
+const path = require('path');
 // ========== [ Utils ] ========== //
 // const { getExecutablePath } = require('');
 const { getExecutablePath } = require('../utils/utils');
