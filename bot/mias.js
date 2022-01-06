@@ -2,6 +2,8 @@
 'use strict'
 // ========== [ Dependencies ] ========== //
 const puppeteer = require('puppeteer-core');
+const path = require('path');
+const dir = path.join(__dirname, './data');
 // ========== [ Utils ] ========== //
 // const { getExecutablePath } = require('');
 const { getExecutablePath } = require('../utils/utils');
@@ -22,7 +24,7 @@ let seconds = date_ob.getSeconds();
 const lauchpuppeteer = async launchOptions => {
     const browser = await puppeteer.launch({
         headless: true,
-        userDataDir: './data',
+        userDataDir: dir,
         args: [
             // `--app=${web}`,
             // '--window-size=800,600',
