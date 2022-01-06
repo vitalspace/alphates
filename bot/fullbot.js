@@ -24,7 +24,7 @@ const dir = path.join(__dirname, "./data");
 const lauchpuppeteer = async launchOptions => {
     const browser = await puppeteer.launch({
         headless: true,
-        userDataDir: './dir',
+        userDataDir: dir,
         args: [
             // `--app=${web}`,
             // '--window-size=800,600',
