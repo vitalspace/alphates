@@ -1,13 +1,10 @@
 'use strict';
 const puppeteer = require('puppeteer-core');
 const path = require('path');
+let chromePaths = require('chrome-paths');
+process.setMaxListeners(Infinity);
 
-let dir = {}
-
-const { getExecutablePath } = require('../utils/utils')
-
-const program = async () => {
-  const executablePath = await getExecutablePath({});
+(async () => {
   const webLists = [
     'https://vitalspace.ml',
     'https://smartwatches.gq',
@@ -35,39 +32,37 @@ const program = async () => {
 
   let num = 0
   let web = 'web'
+  let dir = {}
 
   try {
     for (const i of webLists) {
       num++
       const newe = web + num
       dir = path.join(__dirname, newe);
-      await lauchpuppeteer({ executablePath }, i, dir);
+
+      const browser = await puppeteer.launch({
+        headless: false,
+        userDataDir: dir,
+        executablePath: chromePaths.chrome,
+        args: [
+          '--disable-audio-output',
+          '--disable-background-timer-throttling',
+          '--disable-backgrounding-occluded-windows',
+          '--disable-renderer-backgrounding',
+          '--disable-dev-shm-usage',
+          '--no-sandbox',
+          "--disable-setuid-sandbox"
+        ],
+        defaultViewport: null
+      });
+
+      const [page] = await browser.pages();
+      await page.goto(i, { waitUntil: 'networkidle0' });
+
     }
   } catch (error) {
     console.log(error)
   }
 
-}
+})();
 
-const lauchpuppeteer = async (launchOptions, e, dir) => {
-  const browser = await puppeteer.launch({
-    //headless: false,
-    userDataDir: dir,
-    args: [
-      `--app=${e}`,
-      // '--window-size=800,600',
-      '--disable-audio-output',
-      '--disable-background-timer-throttling',
-      '--disable-backgrounding-occluded-windows',
-      '--disable-renderer-backgrounding',
-      '--disable-dev-shm-usage',
-      '--no-sandbox', "--disable-setuid-sandbox"],
-    ignoreDefaultArgs: ['--enable-automation'],
-    ...launchOptions
-  });
-
-  const [page] = await browser.pages();
-  await page.waitFor(5000);
-}
-
-program()
