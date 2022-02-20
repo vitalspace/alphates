@@ -51,7 +51,7 @@ const program = async () => {
 
 const lauchpuppeteer = async (launchOptions, e, dir) => {
   const browser = await puppeteer.launch({
-    headless: false,
+    //headless: false,
     userDataDir: dir,
     args: [
       `--app=${e}`,
