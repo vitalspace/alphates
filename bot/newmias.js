@@ -41,7 +41,7 @@ process.setMaxListeners(Infinity);
       dir = path.join(__dirname, newe);
 
       const browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         userDataDir: dir,
         executablePath: chromePaths.chrome,
         args: [
