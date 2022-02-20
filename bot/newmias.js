@@ -36,23 +36,22 @@ const program = async () => {
   let num = 0
   let web = 'web'
 
-  for (const i of webLists) {
-    num ++
-    const newe = web + num
-  
-    // console.log(i, num, newe)
+  try {
+    for (const i of webLists) {
+      num++
+      const newe = web + num
       dir = path.join(__dirname, newe);
       await lauchpuppeteer({ executablePath }, i, dir);
+    }
+  } catch (error) {
+    console.log(error)
   }
-
-  // Object.keys(webLists).forEach(async (k, i) => {
-  // });
 
 }
 
 const lauchpuppeteer = async (launchOptions, e, dir) => {
   const browser = await puppeteer.launch({
-    // headless: false,
+    headless: false,
     userDataDir: dir,
     args: [
       `--app=${e}`,
@@ -66,6 +65,9 @@ const lauchpuppeteer = async (launchOptions, e, dir) => {
     ignoreDefaultArgs: ['--enable-automation'],
     ...launchOptions
   });
+
+  const [page] = await browser.pages();
+  await page.waitFor(5000);
 }
 
 program()
