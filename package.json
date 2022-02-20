@@ -10,10 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "carlo": "^0.9.46",
-    "colors": "^1.4.0",
-    "lowdb": "^1.0.0",
-    "node-cron": "^3.0.0",
+    "chrome-paths": "^1.0.1",
     "puppeteer-core": "^2.0.0"
   }
 }
