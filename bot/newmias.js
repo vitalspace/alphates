@@ -5,9 +5,9 @@ let chromePaths = require('chrome-paths');
 
 mylist()
 
-// cron.schedule('0 */25 * * * *', function () {
-//   mylist()
-// });
+cron.schedule('0 */25 * * * *', function () {
+    mylist()
+});
 
 async function mylist() {
   try {
