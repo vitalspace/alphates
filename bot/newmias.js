@@ -1,5 +1,4 @@
 'use strict';
-
 const puppeteer = require('puppeteer-core');
 let chromePaths = require('chrome-paths');
 process.setMaxListeners(Infinity);
@@ -26,12 +25,15 @@ async function mylist() {
       defaultViewport: null
     });
 
+    const [page] = await browser.pages();
+
     browser.on('disconnected', async () => {
-      mylist()
+      mylist();
     });
 
     await page.goto('https://vitalspace.ml',  "width=200,height=100",  { timeout: 0, waitUntil: "networkidle2" });
 
+ 
     if (await page.$('.web2') !== null) {
       await page.$eval('.web2', elem => elem.click());
       await page.bringToFront();  
@@ -198,10 +200,12 @@ async function mylist() {
       console.log('pase por 2')
     }
 
-    await page.waitFor(1200000)
+    await page.waitFor(1080000)
     await browser.close()
 
   } catch (error) {
     console.log(error)
   }
 }
+
+
