@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "carlo": "^0.9.46",
     "chrome-paths": "^1.0.1",
+    "node-cron": "^3.0.0",
     "puppeteer-core": "^2.0.0"
   }
 }
