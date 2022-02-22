@@ -377,8 +377,6 @@ async function mylist() {
     //   console.log('pase por 50')
     // }
 
-    await page.waitFor(1080000)
-    await browser.close()
 
   } catch (error) {
     console.log(error)
