@@ -219,145 +219,145 @@ async function mylist() {
       console.log('pase por 24')
     }
 
-    if (await page.$('.web25') !== null) {
-      await page.$eval('.web25', elem => elem.click());
-    } else {
-      console.log('pase por 25')
-    }
+    // if (await page.$('.web25') !== null) {
+    //   await page.$eval('.web25', elem => elem.click());
+    // } else {
+    //   console.log('pase por 25')
+    // }
 
-    if (await page.$('.web26') !== null) {
-      await page.$eval('.web26', elem => elem.click());
-    } else {
-      console.log('pase por 26')
-    }
+    // if (await page.$('.web26') !== null) {
+    //   await page.$eval('.web26', elem => elem.click());
+    // } else {
+    //   console.log('pase por 26')
+    // }
 
-    if (await page.$('.web27') !== null) {
-      await page.$eval('.web27', elem => elem.click());
-    } else {
-      console.log('pase por 27')
-    }
+    // if (await page.$('.web27') !== null) {
+    //   await page.$eval('.web27', elem => elem.click());
+    // } else {
+    //   console.log('pase por 27')
+    // }
 
-    if (await page.$('.web28') !== null) {
-      await page.$eval('.web28', elem => elem.click());
-    } else {
-      console.log('pase por 28')
-    }
+    // if (await page.$('.web28') !== null) {
+    //   await page.$eval('.web28', elem => elem.click());
+    // } else {
+    //   console.log('pase por 28')
+    // }
 
-    if (await page.$('.web29') !== null) {
-      await page.$eval('.web29', elem => elem.click());
-    } else {
-      console.log('pase por 29')
-    }
+    // if (await page.$('.web29') !== null) {
+    //   await page.$eval('.web29', elem => elem.click());
+    // } else {
+    //   console.log('pase por 29')
+    // }
 
-    if (await page.$('.web30') !== null) {
-      await page.$eval('.web30', elem => elem.click());
-    } else {
-      console.log('pase por 30')
-    }
+    // if (await page.$('.web30') !== null) {
+    //   await page.$eval('.web30', elem => elem.click());
+    // } else {
+    //   console.log('pase por 30')
+    // }
 
-    if (await page.$('.web31') !== null) {
-      await page.$eval('.web31', elem => elem.click());
-    } else {
-      console.log('pase por 31')
-    }
-
-
-    if (await page.$('.web32') !== null) {
-      await page.$eval('.web32', elem => elem.click());
-    } else {
-      console.log('pase por 32')
-    }
-
-    if (await page.$('.web33') !== null) {
-      await page.$eval('.web33', elem => elem.click());
-    } else {
-      console.log('pase por 33')
-    }
-
-    if (await page.$('.web34') !== null) {
-      await page.$eval('.web34', elem => elem.click());
-    } else {
-      console.log('pase por 34')
-    }
-
-    if (await page.$('.web35') !== null) {
-      await page.$eval('.web35', elem => elem.click());
-    } else {
-      console.log('pase por 35')
-    }
+    // if (await page.$('.web31') !== null) {
+    //   await page.$eval('.web31', elem => elem.click());
+    // } else {
+    //   console.log('pase por 31')
+    // }
 
 
-    if (await page.$('.web36') !== null) {
-      await page.$eval('.web36', elem => elem.click());
-    } else {
-      console.log('pase por 36')
-    }
+    // if (await page.$('.web32') !== null) {
+    //   await page.$eval('.web32', elem => elem.click());
+    // } else {
+    //   console.log('pase por 32')
+    // }
 
-    if (await page.$('.web37') !== null) {
-      await page.$eval('.web37', elem => elem.click());
-    } else {
-      console.log('pase por 37')
-    }
+    // if (await page.$('.web33') !== null) {
+    //   await page.$eval('.web33', elem => elem.click());
+    // } else {
+    //   console.log('pase por 33')
+    // }
 
-    if (await page.$('.web38') !== null) {
-      await page.$eval('.web38', elem => elem.click());
-    } else {
-      console.log('pase por 38')
-    }
+    // if (await page.$('.web34') !== null) {
+    //   await page.$eval('.web34', elem => elem.click());
+    // } else {
+    //   console.log('pase por 34')
+    // }
 
-    if (await page.$('.web39') !== null) {
-      await page.$eval('.web39', elem => elem.click());
-    } else {
-      console.log('pase por 39')
-    }
+    // if (await page.$('.web35') !== null) {
+    //   await page.$eval('.web35', elem => elem.click());
+    // } else {
+    //   console.log('pase por 35')
+    // }
 
-    if (await page.$('.web40') !== null) {
-      await page.$eval('.web40', elem => elem.click());
-    } else {
-      console.log('pase por 40')
-    }
 
-    if (await page.$('.web41') !== null) {
-      await page.$eval('.web41', elem => elem.click());
-    } else {
-      console.log('pase por 41')
-    }
+    // if (await page.$('.web36') !== null) {
+    //   await page.$eval('.web36', elem => elem.click());
+    // } else {
+    //   console.log('pase por 36')
+    // }
 
-    if (await page.$('.web42') !== null) {
-      await page.$eval('.web42', elem => elem.click());
-    } else {
-      console.log('pase por 42')
-    }
+    // if (await page.$('.web37') !== null) {
+    //   await page.$eval('.web37', elem => elem.click());
+    // } else {
+    //   console.log('pase por 37')
+    // }
 
-    if (await page.$('.web43') !== null) {
-      await page.$eval('.web43', elem => elem.click());
-    } else {
-      console.log('pase por 43')
-    }
+    // if (await page.$('.web38') !== null) {
+    //   await page.$eval('.web38', elem => elem.click());
+    // } else {
+    //   console.log('pase por 38')
+    // }
 
-    if (await page.$('.web44') !== null) {
-      await page.$eval('.web44', elem => elem.click());
-    } else {
-      console.log('pase por 44')
-    }
+    // if (await page.$('.web39') !== null) {
+    //   await page.$eval('.web39', elem => elem.click());
+    // } else {
+    //   console.log('pase por 39')
+    // }
 
-    if (await page.$('.web45') !== null) {
-      await page.$eval('.web45', elem => elem.click());
-    } else {
-      console.log('pase por 45')
-    }
+    // if (await page.$('.web40') !== null) {
+    //   await page.$eval('.web40', elem => elem.click());
+    // } else {
+    //   console.log('pase por 40')
+    // }
 
-    if (await page.$('.web46') !== null) {
-      await page.$eval('.web46', elem => elem.click());
-    } else {
-      console.log('pase por 46')
-    }
+    // if (await page.$('.web41') !== null) {
+    //   await page.$eval('.web41', elem => elem.click());
+    // } else {
+    //   console.log('pase por 41')
+    // }
 
-    if (await page.$('.web47') !== null) {
-      await page.$eval('.web47', elem => elem.click());
-    } else {
-      console.log('pase por 47')
-    }
+    // if (await page.$('.web42') !== null) {
+    //   await page.$eval('.web42', elem => elem.click());
+    // } else {
+    //   console.log('pase por 42')
+    // }
+
+    // if (await page.$('.web43') !== null) {
+    //   await page.$eval('.web43', elem => elem.click());
+    // } else {
+    //   console.log('pase por 43')
+    // }
+
+    // if (await page.$('.web44') !== null) {
+    //   await page.$eval('.web44', elem => elem.click());
+    // } else {
+    //   console.log('pase por 44')
+    // }
+
+    // if (await page.$('.web45') !== null) {
+    //   await page.$eval('.web45', elem => elem.click());
+    // } else {
+    //   console.log('pase por 45')
+    // }
+
+    // if (await page.$('.web46') !== null) {
+    //   await page.$eval('.web46', elem => elem.click());
+    // } else {
+    //   console.log('pase por 46')
+    // }
+
+    // if (await page.$('.web47') !== null) {
+    //   await page.$eval('.web47', elem => elem.click());
+    // } else {
+    //   console.log('pase por 47')
+    // }
 
     // if (await page.$('.web48') !== null) {
     //   await page.$eval('.web48', elem => elem.click());
